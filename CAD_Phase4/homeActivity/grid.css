@@ -1,0 +1,83 @@
+body::-webkit-scrollbar{
+    display: none;
+  }
+  /* CSS for styling the video grid */
+  #video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .video-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .video-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+  @media screen and (width<1000px){
+      #video-grid{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 20px;
+      }
+      video{
+        width: 400px;
+      }
+  }
+  @media screen and (width<500px){
+      #video-grid{
+          display: grid;
+          width: 600px;
+          grid-template-columns:1fr;
+          gap: 20px;
+      }
+  }
+  #add-video{
+    background-color: black;
+    color: red;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    border-radius: 30px;
+    position: fixed;
+    float: right;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+  
+  
+  input:hover{
+    cursor: pointer;
+  }
+  .submitBtn{
+    display: none;
+  }
+  video{
+    width: 350px;
+    border-radius: 20px;
+    transition: scale 400ms;
+  }
+  video:hover{
+    scale: 1.2;
+  }
+  div{
+    border-radius: 20px;
+    transition: box-shadow 500ms;
+  }
+   div div:hover{
+    box-shadow: 4px 4px 10px black;
+  }
+  img{
+    width: 60px;
+  }

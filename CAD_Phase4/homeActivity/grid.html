@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KiBo</title>
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+  <h1>KiBo<img src="kibo.png"></h1>
+  <h4>Enjoy By Watching with Friends</h4>
+  <div id="video-grid">
+    <!-- JavaScript will add video items here -->
+  </div>
+    <input id="add-video" class="add-video" type="file" accept=".mp4">
+    <label for="add-video" id="add-video"><strong><b>+</b></strong></label>
+    <button id="submitBtn" class="submitBtn" onclick="uploadFile()">Submit</button>
+  <script src="grid.js"></script>
+  <script src="gridVideoUpload.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ibm-cos-sdk/3.0.0/ibm-cos-sdk.min.js"></script>
+</body>
+</html>
+ 
